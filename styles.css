@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat";
 }
 @font-face { 
     font-family: "Groundation"; 
@@ -56,6 +56,12 @@ a {
 .footerInformacion h5 {
     color: black;
 }
+.footerInformacion {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
 /*iconos de redes sociales del footer*/
 .fa-brands {
     width: 25px;
@@ -106,9 +112,11 @@ h5 {
 }
 /*---------------Main------------------*/
 .subtituloMiami {
-    color: rgb(231, 159, 159);    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(231, 159, 159);    
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    margin: 20px;
+    margin: 50px 0px;
+    font-family: Balance;
 }
 .row {
     width: 100%;
@@ -123,6 +131,8 @@ h5 {
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,550px);
     grid-gap:15px;
+    max-width: 1300px;
+    margin:auto;
     margin-bottom: 60px;
     grid-template-areas: 
     "img1 img2 img3"
@@ -184,7 +194,7 @@ h5 {
 /*----------------------PAGE TRANSPORT----------------------*/
 /* parallax  */
 .parallaxTransport {
-    background-image: url("../assets/transoport/portada.jpg" );
+    background-image: url("./assets/transoport/portada.jpg" );
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -340,7 +350,7 @@ h4 {
     align-items: center; 
 }
 .Map {
-    margin: 20px;
+    margin: 10px;
 }
 /*---subpagina everglades----*/
 .parallaxEverglades {
@@ -572,22 +582,18 @@ h4 {
     font-family: Groundation ;
 }
 .map {
-    text-align: left;
-    margin-left: 130px;
-}
-/*modificando el form de bootstrap*/
-.form-label {
-    color: white;
-}
-.mb-3 #exampleFormControlInput1{
-    width: 300px !important; 
+    display: flex;
+    justify-content: center;
 }
 .BoxContact {
     background-color: rgb(231, 159, 159);
-   
-
-    width: 450px;
+    width: 300px;
+    height: 80px;
     border-radius: 20px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
 .BoxContact p {
     font-size: 18px;
@@ -710,9 +716,12 @@ h4 {
     background-color: rgb(231, 159, 159);
     flex-wrap: wrap;
     border-radius: 10px;
-    }
+    text-align: center; 
+}
 .nightBox h2 {
     color: black;
+    margin-top: 20px;
+    font-family: Balance;
 }
 .nightBox p {
     margin: 20px;
@@ -846,7 +855,7 @@ h4 {
     background-image:url(./assets/culture/havana/havana5.jpg) ;
 }
 .bg-3 {
-    background-image:url(./assets/culture/havana/havana2.jpeg) ;
+    background-image:url(./assets/culture/havana/ha) ;
 }
 .bg-4 {
     background-image:url(./assets/culture/havana/havnna.jpeg) ;
@@ -1030,7 +1039,6 @@ h4 {
     "img1 img2"
     "img3 img4";
 }
-
 .sec1 {
     background-image: url(./assets/gastronomy/azul/azul1.jpg);
     background-size: cover;
@@ -1125,17 +1133,17 @@ h4 {
     .galeria{
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(3,300px);
+        max-width: 900px;
         grid-template-areas: 
         "img1 img2"
         "img3 img4" 
         "img5 img6";
     }  
     .items__sections a {
-        color: #ffffff;
         text-shadow: 2px 2px 1px rgb(0, 0, 0);
     }
 } 
-@media (max-width: 733px)  { 
+@media (max-width: 960px)  { 
     .galeria{
         grid-template-columns: repeat(1,1fr);
         grid-template-rows: repeat(5,150px);
@@ -1152,9 +1160,8 @@ h4 {
     }
     .subtituloMiami {
         font-size: 20px;
-    }
-} 
-
+    } 
+}
 /*----Beaches -----*/
 @media (max-width: 866px)  { 
     .galeryBeachs{
@@ -1300,7 +1307,6 @@ h4 {
         width: 280px;
         height: 200px;
     }
-    
 }
 /*media querys sub-paginas de cultura*/
 @media screen and (max-width: 1503px) {
@@ -1323,7 +1329,7 @@ h4 {
 @media screen and (max-width: 456px) {
     .parent {
         height: 190px;
-        width: 320px;
+        width: 300px;
     }
     .cardCulture {
         width: 290px;
@@ -1331,7 +1337,6 @@ h4 {
     .cardCulture1 {
         width: 290px;
     }
-    
 }
 /*----------GASTRONOMY------------*/
 @media screen and (max-width: 1300px) {
@@ -1420,7 +1425,17 @@ h4 {
         width: 290px;
     }
 }
+/*CONTACT*/
+@media screen and (max-width: 1343px) {
+   .map  {
+        flex-direction: column;
+        align-items: center;   
+    }
+    .map iframe  {
+        width: 280px;
 
+    }
+}
 
 
 
