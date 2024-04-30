@@ -111,6 +111,21 @@ h5 {
     margin: 20px;
 }
 /*---------------Main------------------*/
+/*carruosel boostrap*/
+.containerCarrousel {
+    max-width: 800px; 
+    display: flex;
+    margin: auto; 
+}
+#demo {
+    max-height: 500px;
+    margin: 40px; 
+}
+.carousel-item img {
+    width: 100%; 
+    height: 500px; 
+    object-fit: cover; 
+}
 .subtituloMiami {
     color: rgb(231, 159, 159);    
     font-family: Arial, Helvetica, sans-serif;
@@ -118,19 +133,16 @@ h5 {
     margin: 50px 0px;
     font-family: Balance;
 }
-.row {
-    width: 100%;
-}
-
 /*------- Fotos de la pagina principal con enlaces a secciones---------- */
 .names__Sections {
     font-size: 22px;
 }
 .galeria {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(2,550px);
-    grid-gap:15px;
+    grid-template-rows: repeat(2,500px);
+    grid-gap: 40px;
     max-width: 1300px;
     margin:auto;
     margin-bottom: 60px;
@@ -138,10 +150,8 @@ h5 {
     "img1 img2 img3"
     "img4 img5 img6";
 }
-
 .items__sections {
-    border: 5px solid black;
-    background-size: 350px 400px ;
+    background-size: cover ;
     background-repeat: no-repeat;
     background-position: center;
     text-align: center;
@@ -149,11 +159,15 @@ h5 {
     display: flex;
     justify-content: center;
     align-items: end;
+    overflow: hidden;
 }
-
+.items__sections img {
+    width: 100%; 
+    height: auto; 
+}
 .item1 {
     grid-area: img1;
-    background-image:url(./assets/inicio/miami4.jpg) ;
+    background-image:url(./assets/inicio/miami4.jpg);
 }
 .item1:hover {
     transform: scale(1.09);
@@ -161,7 +175,7 @@ h5 {
 }
 .item2 {
     grid-area: img2;
-    background-image:url(./assets/inicio/miami5.jpg) ;
+    background-image:url(./assets/inicio/miami5.jpg);
 }
 .item2:hover {
     transform: scale(1.09);
@@ -169,7 +183,7 @@ h5 {
 }
 .item3 {
     grid-area: img3;
-    background-image:url(./assets/gastronomy/portada.jpg) ;
+    background-image:url(./assets/gastronomy/portada.jpg);
 }
 .item3:hover {
     transform: scale(1.09);
@@ -177,7 +191,7 @@ h5 {
 }
 .item4 {
     grid-area: img4;
-    background-image:url(./assets/Shopping/brickel/brickel2.jpg) ;
+    background-image:url(./assets/Shopping/brickel/brickel2.jpg);
 }
 .item4:hover {
     transform: scale(1.09);
@@ -185,7 +199,7 @@ h5 {
 }
 .item5 {
     grid-area: img5;
-    background-image:url(./assets/culture/havana/littleH.jpg) ;
+    background-image:url(./assets/culture/havana/littleH.jpg);
 }
 .item5:hover {
     transform: scale(1.09);
@@ -209,7 +223,6 @@ h5 {
     font-size: 60px;
     font-family: Groundation ;
 }
-
 p {
     color: white;
     font-size: 20px;
@@ -219,7 +232,6 @@ p {
     padding: 20px;
     text-align: center;    
 }
-
 /*---------info de los transportes-----------*/
 .CardGeneral {
     display: grid;
@@ -228,7 +240,6 @@ p {
     grid-template-rows: repeat(2,320px);
     margin: 40px;
 }
-
 div .CardTransport {
     background-color: rgb(231, 159, 159);
     gap: 10px 90px ;
@@ -236,14 +247,12 @@ div .CardTransport {
     margin: 20px;
     border: 5px solid rgb(228, 94, 118);
 }
-
 .CardTransport p {
     text-align: center;
     margin: 20px;
     font-size: 16px;
     color: rgb(0, 0, 0);
 }
-
 .CardTransport h2 {
     text-align: center;
     margin: 20px;
@@ -251,7 +260,6 @@ div .CardTransport {
     color: rgb(0, 0, 0);
     font-family:Balance ;
 }
-
 /*-------fotos de los transportes--------*/
 .photosGeneral {
     display: flex;
@@ -259,13 +267,11 @@ div .CardTransport {
     justify-content: center;
     margin: 60px;
 }
-
 .photosTransport {
     width: 600px;
     height: 350px;
     object-fit: cover;
 }
-
 /*titulos de los transportes*/
 h4 {
     font-size: 28px;
@@ -313,7 +319,6 @@ h4 {
     text-align: left; 
     margin: 20px;
 }
-
 /*-------SUBPAGINAS----*/
 /*boxes actividades*/
 .box1Activities {
@@ -323,13 +328,11 @@ h4 {
     width: 900px;
     margin-left: auto; 
 }
-
 .box1 {
     margin: 15px;
     padding: 15px;
     border-radius: 9px;
 }
-
 .box2Activities {
     border: 5px solid rgb(228, 94, 118);
     background-color: rgb(231, 159, 159);
@@ -337,7 +340,6 @@ h4 {
     width: 900px;
     margin-right: auto; 
 }
-
 .box2 {
     margin: 20px;
     padding: 20px;
@@ -379,38 +381,32 @@ h4 {
     grid-template-areas: 
     "img1 img2"
     "img3 img4";
-
 }
 .galery_section{
     background-repeat: no-repeat;
     background-position: center;
     background-size: 350px 4000px;
 }
-
 .photo1 {
     background-image: url(./assets/activities/EVERGLADES/everglades2.jpeg);
     background-size: cover;
     margin: 20px;
 }
-
 .photo2 {
     background-image: url(./assets/activities/EVERGLADES/everglades3.jpg);
     background-size: cover;
     margin: 20px;
 }
-
 .photo3 {
     background-image: url(./assets/activities/EVERGLADES/everglades3.jpg);
     background-size: cover;
     margin: 20px;
 }
-
 .photo4 {
     background-image: url(./assets/activities/EVERGLADES/everglades5.jpg);
     background-size: cover;
     margin: 20px;
 }
-
 /*---subpagina night party cruise---- */
 .parallaxNightParty{
     background-image: url("./assets/activities/boat/boat4.jpg" );
@@ -439,13 +435,11 @@ h4 {
     "img1 img2"
     "img3 img4";
 }
-
 .foto1 {
     background-image: url(./assets/activities/boat/boat1.jpg);
     background-size: cover;
     margin: 20px;
 }
-
 .foto2 {
     background-image: url(./assets/activities/boat/boat2.jpg);
     background-size: cover;
@@ -490,13 +484,11 @@ h4 {
     "img1 img2"
     "img3 img4";
 }
-
 .items1 {
     background-image: url(./assets/activities/celebrities/barco.jpg);
     background-size: cover;
     margin: 20px;
 }
-
 .items2 {
     background-image: url(./assets/activities/celebrities/barco1.jpg);
     background-size: cover;
@@ -547,7 +539,6 @@ h4 {
     background-size: cover;
     margin: 20px;
 }
-
 .it2 {
     background-image: url(./assets/activities/ocean/ocean4.jpg);
     background-size: cover;
@@ -567,7 +558,7 @@ h4 {
 .parallaxContact {
     background-image: url("./assets/COMUNICATE.jpg" );
     background-attachment: fixed;
-    background-position: center;
+    background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
     height: 600px;
@@ -584,20 +575,7 @@ h4 {
 .map {
     display: flex;
     justify-content: center;
-}
-.BoxContact {
-    background-color: rgb(231, 159, 159);
-    width: 300px;
-    height: 80px;
-    border-radius: 20px;
     margin: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-}
-.BoxContact p {
-    font-size: 18px;
-    text-align: center;
 }
 .whatsapp {
     height: 70px;
@@ -610,6 +588,12 @@ h4 {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+}
+.mapContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
 }
 /*---------------------------PAGINA BEACH--------------------*/
 /*paralax beach*/
@@ -631,58 +615,48 @@ h4 {
     text-shadow: 2px 2px 2px black;
     font-family: Groundation ;
 }
-/*titulo playa*/
-.titlesBeachs {
-    text-align: center;
-    font-size: 50px;
-    color: black;
-    margin: 90px 70px;
-    font-family: Groundation ;
+/*cards con info de las playas y fotos*/
+.Beaches {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; 
 }
-/*imagenes beach*/
-.galeryBeachs {
-    display: grid;
-    grid-template-columns: repeat(1,900px);
-    grid-template-rows: repeat(4,400px);
-    justify-content: center;    
-    grid-template-areas: 
-    "beach1"
-    "beach2"
-    "beach3" 
-    "beach4";
-}
-.galery_beach{
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.beach1 {
-    background-image: url(./assets/beach/south/southBeach.jpg);
-    background-size: cover;
+.Beaches_info {
+    background-color: rgb(228, 94, 118);
+    width: 650px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    border-radius: 20px;
     margin: 20px;
+    padding: 20px;
 }
-.beach2 {
-    background-image: url(./assets/beach/sunny/sunny2.jpg);
-    background-size: cover;
+.Beaches_info_img {
+    
+    width: 650px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    border-radius: 20px;
     margin: 20px;
+    padding: 20px;
 }
-
-.beach3 {
-    background-image: url(./assets/beach/plam/Crandon.jpg);
-    background-size: cover;
-    margin: 20px;
+.Beaches_info_img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px
 }
-
-.beach4 {
-    background-image: url(./assets/beach/virigina/virginia.jpg);
-    background-size: cover;
-    margin: 20px;
+.Beaches_info h1 {
+font-family: Groundation ;
 }
+.Beaches_info p{
+    font-size: 20px;
+    color: #000;
+    }
 /*hover blanco y negro de las fotos de beach*/
-.beachH:hover {
+.Beaches_info_img img:hover {
     filter: grayscale(100%);
     transition-duration: 300ms;
 }
-
 /*-----------------------NIGHT LIFE-----------------------*/
 .parallaxNightLife {
     background-image: url("./assets/nightLife/portada.jpg" );
@@ -727,7 +701,6 @@ h4 {
     margin: 20px;
     color: black;
 }
-
 .nightBox div {
     width: 800px;
 }
@@ -782,7 +755,6 @@ h4 {
     bottom: 10px; 
     display: flex;
 }
-
 /* sub paginas de shopping*/
 .cardShoppings {
     display: flex;
@@ -790,7 +762,6 @@ h4 {
     align-items: left;
     width: 100%;
 }
-
 .cardContent {
     display: flex;
     gap: 50px;
@@ -815,7 +786,6 @@ h4 {
     width: 1200px;
     height: auto;
 }
-
 /*---------------PAGINA CULTURA--------------------*/ 
 .container-siblings{
     text-align: center;
@@ -842,7 +812,6 @@ h4 {
 .sibling:hover {
     transform: scale(1.1);
 }
-
 .container-siblings:has(.sibling:hover) > .sibling:not(:hover) {
     filter: brightness(0.5) saturate(0.5) contrast(0.5) blur(1px);
     transform: scale(0.9);
@@ -860,7 +829,6 @@ h4 {
 .bg-4 {
     background-image:url(./assets/culture/havana/havnna.jpeg) ;
 }
-
 .wrapper {
     text-align: center;
     margin-left: auto;
@@ -877,29 +845,24 @@ h4 {
     box-shadow: 0 4px 6px -1px rgb(0, 0, 0, 0,5);
     border-radius: 10px;
 }
-
 .child {
     height: 100%;
     background-size: cover;
     transition: all 0.8s;
 }
-
 .parent:hover .child {
     transform: scale(1.2);
 }
-
 .contenedorCultura {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-
 .cardCulture {
     border: 5px solid rgb(228, 94, 118);
     background-color: rgb(231, 159, 159);
     width: 900px;
 }
-
 .cardCulture1 {
     border: 5px solid rgb(228, 94, 118);
     background-color: rgb(231, 159, 159);
@@ -919,7 +882,6 @@ h4 {
 .bg-eight {
     background-image:url(./assets/culture/Phillip/mmuseo4.jpg) ;
 }
-
 /*subpagina de culture museum */
 .bg-uno {
     background-image:url(./assets/culture/museum/fotoPortada.png) ;
@@ -933,7 +895,6 @@ h4 {
 .bg-cuatro {
     background-image:url(./assets/culture/museum/museo4.jpg) ;
 }
-
 /*subpagina de  Wynwood Walls */
 .bg-cinco {
     background-image:url(./assets/culture/walls/wallMiami.jpg) ;
@@ -1044,7 +1005,6 @@ h4 {
     background-size: cover;
     margin: 20px;
 }
-
 .sec2 {
     background-image: url(./assets/gastronomy/azul/azul2.jpg);
     background-size: cover;
@@ -1060,7 +1020,6 @@ h4 {
     background-size: cover;
     margin: 20px;
 }
-
 /*Elcielo Restaurant imagenes*/
 .sect1 {
     background-image: url(./assets/gastronomy/elCielo/cielo.jpg);
@@ -1083,7 +1042,6 @@ h4 {
     background-size: cover;
     margin: 20px;
 }
-
 /*gabbiano Restaurant imagenes*/
 .sec5 {
     background-image: url(./assets/gastronomy/ganiano/gabbiano.jpg);
@@ -1126,14 +1084,14 @@ h4 {
     background-size: cover;
     margin: 20px;
 }
-
 /*------------------MEDIA QUERYS DE TODAS LAS PAGINAS----------------*/
 /*-----MAIN----*/
-@media (max-width: 1175px)  { 
+@media (max-width: 1350px)  { 
     .galeria{
         grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(3,300px);
+        grid-template-rows: repeat(3,440px);
         max-width: 900px;
+        background-position: cover;
         grid-template-areas: 
         "img1 img2"
         "img3 img4" 
@@ -1142,11 +1100,16 @@ h4 {
     .items__sections a {
         text-shadow: 2px 2px 1px rgb(0, 0, 0);
     }
+    .carousel {
+        max-width: 700px; 
+        display: block; 
+    }
 } 
 @media (max-width: 960px)  { 
     .galeria{
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(5,150px);
+        grid-template-columns: repeat(1,290px);
+        grid-template-rows: repeat(5,300px);
+        justify-content: center;
         grid-template-areas: 
         "img1" 
         "img2"
@@ -1161,13 +1124,37 @@ h4 {
     .subtituloMiami {
         font-size: 20px;
     } 
+    .carousel-item img {
+        height: 300px; 
+    align-items: center;    
+    }
 }
-/*----Beaches -----*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------BEACH-----------*/
 @media (max-width: 866px)  { 
     .galeryBeachs{
         grid-template-columns: repeat(1,1fr);
         grid-template-rows: repeat(4,1fr);
-    } 
+    }
+    
 }
 /*----Night life -----*/
 @media (max-width: 860px)  { 
@@ -1425,20 +1412,25 @@ h4 {
         width: 290px;
     }
 }
-/*CONTACT*/
+/*-----------CONTACT------------*/
 @media screen and (max-width: 1343px) {
    .map  {
         flex-direction: column;
         align-items: center;   
     }
     .map iframe  {
-        width: 280px;
+        width: 6500px;
+    }
+}
+@media screen and (max-width: 927px) {
+    .parallaxContact {
+        background-position: cover;
+    }
+    .mapContact  {
+        width: 290px;
 
     }
 }
-
-
-
 
 
 

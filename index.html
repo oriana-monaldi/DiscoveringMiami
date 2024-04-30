@@ -56,30 +56,88 @@
         <video  class="videoMiami" src="./assets/videoInicial.mp4" type=video/mp4 width="100%" autoplay muted loop playsinline ></video>
       </div>
 
-      <div class="row">
-        <img class="col-4" src="./assets/inicio/maimi2.jpg" alt="foto Miami1">
-        <img class="col-4" src="./assets/inicio/miami1.jpg" alt="foto Miami 2">
-        <img class="col-4" src="./assets/inicio/miami3.jpg" alt="foto Miami 3">
-      </div>
-        
       <h2 class="subtituloMiami"> Immerse Yourself in Miami! Shop, Culture, Flavores, and Unforgettable Nights</h2>
-          
+
+
+      <!-- Inicio del Carrusel -->
+      <div class="containerCarrousel">
+        <!-- Carousel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+          <!-- Indicators/dots -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+          </div>
+      
+          <!-- The slideshow/carousel -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src=".//assets/Shopping/brickel/brickel4.jpg" alt="Brickel City Centre" class="d-block w-100">
+              <div class="carousel-caption">
+                <h3>Brickel City Centre</h3>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/inicio/miami3.jpg" alt="Cradon" class="d-block w-100">
+              <div class="carousel-caption">
+                <h3>Crandon Park</h3>
+              </div> 
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/inicio/maimi2.jpg" alt="Miami Ocean" class="d-block w-100">
+              <div class="carousel-caption">
+                <h3>Ocean Drive</h3>
+              </div>  
+            </div>
+          </div>
+      
+          <!-- Left and right controls/icons -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+
+        <!--Fin carrusel Bootstrap-->
+      
       <div class="galeria">
         <div class="items__sections item1">
-          <a class="names__Sections" href="./pages/beach.html">BEACHES</a>
+          <a href="./pages/beach.html">
+            <img src="./assets/inicio/miami4.jpg" alt="Beaches">
+            <span class="names__Sections">BEACHES</span>
+          </a>
         </div>
         <div class="items__sections item2">
-            <a class="names__Sections" href="./pages/nightLife.html">NIGHT LIFE</a>
+          <a href="./pages/nightLife.html">
+            <img src="./assets/inicio/miami5.jpg" alt="Night Life">
+            <span class="names__Sections">NIGHT LIFE</span>
+          </a>
         </div>
         <div class="items__sections item3">
-          <a class="names__Sections" href="./pages/gastronomy.html">GASTRONOMY</a>
+          <a href="./pages/gastronomy.html">
+            <img src="./assets/gastronomy/portada.jpg" alt="Gastronomy">
+            <span class="names__Sections">GASTRONOMY</span>
+          </a>
         </div>
         <div class="items__sections item4">
-          <a class="names__Sections" href="./pages/shopping.html">SHOPPING</a>
+          <a href="./pages/shopping.html">
+            <img src="./assets/Shopping/brickel/brickel2.jpg" alt="Shopping">
+            <span class="names__Sections">SHOPPING</span>
+          </a>
         </div>
         <div class="items__sections item5">
-          <a class="names__Sections" href="./pages/culture.html">CULTURE</a>
+          <a href="./pages/culture.html">
+            <img src="./assets/culture/havana/littleH.jpg" alt="Culture">
+            <span class="names__Sections">CULTURE</span>
+          </a>
+        </div>
       </div>
+      
+      
     </main>
 
     <footer>
