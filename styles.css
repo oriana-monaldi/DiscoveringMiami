@@ -290,11 +290,12 @@ h4 {
 
 /*----------------------------ACTIVITIES--------------------*/
 /*Titulo de la pagina actividades*/
-.titleActivities {
-    font-size: 35px;
-    text-align: center;
-    color: white;
-    margin: 20px;
+.tituloActivities {
+    text-align: center; 
+    color: rgb(228, 94, 118);
+    font-size: 80px;
+    font-family: Groundation ;
+    margin: 10px;
 }
 .ActivitiesCards  {
     display: inline
@@ -778,7 +779,7 @@ font-family: Groundation ;
     justify-content: space-between;
     padding-top: 30px; 
     padding-bottom: 30px;
-    margin-left: 25px;
+    margin: auto;
 }
 .cardInformacion {
     border: 5px solid rgb(228, 94, 118);
