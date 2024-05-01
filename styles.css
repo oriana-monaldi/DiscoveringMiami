@@ -330,19 +330,23 @@ h4 {
     background-color: rgb(231, 159, 159);
     border-radius: 9px;
     width: 900px;
-    margin-left: auto; 
+    margin-right: auto;
+
+    margin-left: 20px;
 }
-.box1 {
-    margin: 15px;
-    padding: 15px;
-    border-radius: 9px;
-}
+
 .box2Activities {
     border: 5px solid rgb(228, 94, 118);
     background-color: rgb(231, 159, 159);
     border-radius: 9px;
     width: 900px;
-    margin-right: auto; 
+    margin-left: auto;
+    margin-right: 20px; 
+}
+.box1 {
+    margin: 15px;
+    padding: 15px;
+    border-radius: 9px;
 }
 .box2 {
     margin: 20px;
@@ -528,7 +532,7 @@ h4 {
     font-family: Groundation ;
 
 }
-/*fotos actividades celebrities boat*/
+/*fotos actividades oceaan*/
 .galeryOcean {
     display: grid;
     grid-template-columns: repeat(2,400px);
@@ -1165,7 +1169,7 @@ font-family: Groundation ;
     transition: 300ms; 
 }
 /*------------------MEDIA QUERYS DE TODAS LAS PAGINAS----------------*/
-/*-----MAIN----*/
+/*---------------------------------------------------MAIN---------------*/
 @media (max-width: 1350px)  { 
     .galeria{
         grid-template-columns: repeat(2,1fr);
@@ -1260,7 +1264,7 @@ font-family: Groundation ;
         justify-content: center;    
         }
 }
-@media (max-width: 600px)  {
+@media (max-width: 630px)  {
     .CardGeneral {
         grid-template-columns: repeat(1,1fr);
         grid-template-rows: repeat(4,1fr);
