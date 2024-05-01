@@ -23,6 +23,10 @@ body {
 .nav-item {
     color: azure;
 }
+/*hover en redes sociales del footer*/
+.iconsFooter a:hover {
+    transform: scale(1.2); 
+}
 /*propiedades para el dropdown de top10*/
 .dropdown-menu {
     background-color: rgb(228, 94, 118)  !important;
@@ -398,7 +402,7 @@ h4 {
     margin: 20px;
 }
 .photo3 {
-    background-image: url(./assets/activities/EVERGLADES/everglades3.jpg);
+    background-image: url(./assets/activities/EVERGLADES/everglades.jpg);
     background-size: cover;
     margin: 20px;
 }
@@ -651,7 +655,8 @@ font-family: Groundation ;
 .Beaches_info p{
     font-size: 20px;
     color: #000;
-    }
+}
+
 /*hover blanco y negro de las fotos de beach*/
 .Beaches_info_img img:hover {
     filter: grayscale(100%);
@@ -765,10 +770,11 @@ font-family: Groundation ;
 .cardContent {
     display: flex;
     gap: 50px;
-    width: 100%;
+    width: 95%;
     justify-content: space-between;
     padding-top: 30px; 
     padding-bottom: 30px;
+    margin-left: 25px;
 }
 .cardInformacion {
     border: 5px solid rgb(228, 94, 118);
@@ -783,9 +789,15 @@ font-family: Groundation ;
     justify-content: center;
 }
 .imgRight {
-    width: 1200px;
+    width: 800px;
     height: auto;
 }
+/*efecto en imagenes azul */
+.imgRight:hover {
+    transform: scale(1.09);
+    transition: 300ms; 
+}
+
 /*---------------PAGINA CULTURA--------------------*/ 
 .container-siblings{
     text-align: center;
@@ -824,7 +836,7 @@ font-family: Groundation ;
     background-image:url(./assets/culture/havana/havana5.jpg) ;
 }
 .bg-3 {
-    background-image:url(./assets/culture/havana/ha) ;
+    background-image:url(./assets/culture/havana/havanna6.jpg) ;
 }
 .bg-4 {
     background-image:url(./assets/culture/havana/havnna.jpeg) ;
@@ -912,7 +924,7 @@ font-family: Groundation ;
 .wrapper1 {
     display: flex;
     justify-content: space-around;
-    margin: 40px;
+    margin: 60px;
 }
 .card_wrapper {
     width: 700px;
@@ -1020,6 +1032,23 @@ font-family: Groundation ;
     background-size: cover;
     margin: 20px;
 }
+/*efecto en imagenes azul */
+.sec1:hover {
+    transform: scale(1.09);
+    transition: 300ms; 
+}
+.sec2:hover {
+    transform: scale(1.09);
+    transition: 300ms; 
+}
+.sec3:hover {
+    transform: scale(1.09);
+    transition: 300ms; 
+}
+.sec4:hover {
+    transform: scale(1.09);
+    transition: 300ms; 
+}
 /*Elcielo Restaurant imagenes*/
 .sect1 {
     background-image: url(./assets/gastronomy/elCielo/cielo.jpg);
@@ -1042,6 +1071,23 @@ font-family: Groundation ;
     background-size: cover;
     margin: 20px;
 }
+/*efecto en imagenes elcielo*/
+.sect1:hover {
+    transform: scale(1.09);
+    transition: 300ms; 
+}
+.sect2:hover {
+    transform: scale(1.09);
+    transition: 300ms; 
+}
+.sect3:hover {
+    transform: scale(1.09);
+    transition: 300ms; 
+}
+.sect4:hover {
+    transform: scale(1.09);
+    transition: 300ms; 
+}
 /*gabbiano Restaurant imagenes*/
 .sec5 {
     background-image: url(./assets/gastronomy/ganiano/gabbiano.jpg);
@@ -1063,6 +1109,23 @@ font-family: Groundation ;
     background-size: cover;
     margin: 20px;
 }
+/*efecto en imagenes gabbiano*/
+.sec5:hover {
+    transform: scale(1.09);
+    transition: 300ms; 
+}
+.sec6:hover {
+    transform: scale(1.09);
+    transition: 300ms; 
+}
+.sec7:hover {
+    transform: scale(1.09);
+    transition: 300ms; 
+}
+.sec8:hover {
+    transform: scale(1.09);
+    transition: 300ms; 
+}
 /*lamarRestaurant imagenes*/
 .sect5 {
     background-image: url(./assets/gastronomy/lamar/lamar4.jpg);
@@ -1083,6 +1146,23 @@ font-family: Groundation ;
     background-image: url(./assets/gastronomy/lamar/laMar1.png);
     background-size: cover;
     margin: 20px;
+}
+/*efecto en imagenes elcielo*/
+.sect5:hover {
+    transform: scale(1.09);
+    transition: 300ms; 
+}
+.sect6:hover {
+    transform: scale(1.09);
+    transition: 300ms; 
+}
+.sect7:hover {
+    transform: scale(1.09);
+    transition: 300ms; 
+}
+.sect8:hover {
+    transform: scale(1.09);
+    transition: 300ms; 
 }
 /*------------------MEDIA QUERYS DE TODAS LAS PAGINAS----------------*/
 /*-----MAIN----*/
@@ -1129,32 +1209,22 @@ font-family: Groundation ;
     align-items: center;    
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*---------BEACH-----------*/
-@media (max-width: 866px)  { 
-    .galeryBeachs{
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(4,1fr);
+@media screen and (max-width: 1300px) {
+    .Beaches {
+        flex-direction: column;
     }
-    
+}
+@media screen and (max-width: 700px) {
+    .Beaches_info_img {
+        width: 360px;
+    }
+    .Beaches_info{
+        width: 350px;
+    }
+    .Beaches_info p{
+        font-size: 13px;
+    }
 }
 /*----Night life -----*/
 @media (max-width: 860px)  { 
@@ -1328,8 +1398,8 @@ font-family: Groundation ;
 /*----------GASTRONOMY------------*/
 @media screen and (max-width: 1300px) {
     .wrapper1 {
-        height: 500px;
-        width: 600px;
+        height: 800px;
+        width: 200px;
         flex-direction: column;
     }
 }
